@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+body {
+    background-color: #b8955c;
+    display: flex;
+    
+}
+
+.container {
+    width: 90%;
+    max-height: 100vh;
+    max-width: 900px;
+    padding-top: 100px;
+    padding-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
+}
+
+.poke-div {
+    width: 200px;
+    background-color: #9EDFE9;
+    border-radius: 1rem;
+    padding: 0 1.5rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.button-left {
+    font-weight: bold;
+    width: 100px;
+    font-size: 15px;
+    padding: 0.3rem 0;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.button-right {
+    font-weight: bold;
+    width: 100px;
+    font-size: 15px;
+    padding: 0.3rem 0;
+    margin: auto;
+    display: block;
+    
+}
