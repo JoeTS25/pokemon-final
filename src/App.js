@@ -1,5 +1,7 @@
 import React from "react";
-import Home from "./components/Home";
+
+import RouteList from "./Routes/RouteList";
+
 
 
 
@@ -7,7 +9,11 @@ function App() {
 
 
   return (
-    <Home />
+    <div>
+      <h1 className="page-header">Welcome to Your Pokedex</h1>
+      <RouteList />
+
+    </div>
   );
 }
 

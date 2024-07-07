@@ -4,6 +4,7 @@ import Page from "./Page";
 import axios from "axios";
 import "./pokeList.css"
 
+
 function Home() {
   const [pokemon, setPokemon] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -55,7 +56,8 @@ function Home() {
       <Page 
         goNextPage={nextPage ? goNextPage : null}
         goPrevPage={prevPage ? goPrevPage : null} />
-    </>
+      
+      </>
   );
 }
 
