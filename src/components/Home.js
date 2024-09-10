@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import PokeList from "./PokeList";
 import Page from "./Page";
 import axios from "axios";
-import "./pokeList.css"
+import CapName from "../Hooks/Capitalize";
+import "./pokeList.css";
 
 
 function Home() {
@@ -48,11 +49,14 @@ function Home() {
     pokEffect();
   }, [currentPage]);
 
+ 
+
   if (isLoading) return ("Page Loading...")
 
   return (
     <>
-      <PokeList pokemon={pokemon} />
+    <h1 className="page-header">Welcome to Your Pokedex</h1>
+      <PokeList pokemon={pokemon} CapName={CapName}/>
       <Page 
         goNextPage={nextPage ? goNextPage : null}
         goPrevPage={prevPage ? goPrevPage : null} />
